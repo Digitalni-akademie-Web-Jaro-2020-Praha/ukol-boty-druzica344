@@ -1,9 +1,15 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 
 /*
@@ -21,3 +27,98 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+.body {
+  background-color: #959595;
+}
+.zbozi {
+  display: flex;
+  width: 670px;
+  height: 440px;
+  font-family: Rubik;
+}
+
+.vizual {
+  flex: 0 0 50%;
+
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  border-radius: 4% 0 0 4%;
+  color: white;
+  position: relative;
+}
+
+.detaily {
+  flex: 0 0 50%;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  border-radius: 0 4% 4% 0;
+  padding-left: 30px;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.bota img {
+  position: absolute;
+  left: -100px;
+}
+
+.vybrana {
+  border: 1px solid #f15f42;
+  border-radius: 50%;
+  padding: 3px;
+  color: #f15f42;
+}
+ul.velikosti {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: space-between;
+}
+.akce {
+  display: inline;
+  text-align: center;
+
+  background-color: #f15f42;
+  border-radius: 5%;
+  padding: 10px 30px;
+}
+.akce a {
+  text-decoration: none;
+  color: white;
+}
+
+.slogan {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.cenovka {
+  text-align: right;
+  padding-top: 240px;
+  padding-right: 30px;
+}
+.cena {
+  font-size: 28px;
+  font-weight: 500;
+}
+.zaruka {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.produkt {
+  color: #959595;
+}
+
+.velikosti {
+  align-items:center;
+  padding-left: 0px;
+}
+
+.velikosti li {
+  display: inline;
+  list-style-type: none;
+  justify-content: space-between;
+  
+}
